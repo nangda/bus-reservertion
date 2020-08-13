@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a {
+	text-decoration: none;
+}
+.conteneur-lightbox {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lightbox-notification{
+	width: 345px;
+	height: auto;
+	max-width: 95%;
+	border-radius: 6px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+}
+.close-lightbox-notification{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 20px;
+	width: 20px;
+	border-radius: 50% 50%;
+	background-color: #fff;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+.close-lightbox-notification path {
+	fill: rgba(0,0,0,0.5);
+	stroke: #fff
+}
+.contenu-lightbox-notification {
+	position: relative;
+	padding:0 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #444;
+	/* display: flex; */
+	flex-wrap: wrap;
+	justify-content: center;
+	/* flex-direction: column; */
+	padding: 9px 15px;
+}
+
+.entete-lightbox-notification {
+    position: relative;
+    max-height: 180px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6em;
+    color: #333;
+    /*! border-bottom: 1px solid #ebebeb; */
+    padding: 3px 0;
+        padding-bottom: 10px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 0px;
+    font-weight: 700;
+}
+
+.conteneur-btn-lightbox-notification{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 15px 10px;
+		border-top: 1px solid #e8e8e8;
+	}
+	.btn-lightbox-notification{
+		/*! background-color: #C41E00; */
+		height: auto;
+		text-align: center;
+		color: #C41E00;
+		display: flex;
+		padding: 0 10px;
+		font-size: 16px;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin: 0 0px;
+		border-radius: 3px;
+		align-items: center;
+		justify-content: center;
+		font-weight: bolder;
+}
+
+.btn-lightbox-notification:hover{
+	color: #333;
+}

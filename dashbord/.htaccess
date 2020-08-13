@@ -1,0 +1,19 @@
+Options -Indexes
+ErrorDocument 403 http://www.gilzik.com/
+
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^inconnu-lyon/?$  test.html [L]
+
+
+
+RewriteRule ^accueil/?$  ./dashbord.php [L]
+
+RewriteRule ^suivi-des-demandes/?$  ./souscription.php [L]
+
+RewriteRule ^donnees-de-base/?$  ./contenu-base.php [L]
+
+RewriteRule ^utilisateurs/?$  ./utilisateur.php [L]
+
+RewriteRule ^mon-compte/?$  ./compte.php [L]
+

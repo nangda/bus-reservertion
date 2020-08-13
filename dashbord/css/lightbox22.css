@@ -1,0 +1,453 @@
+/*-------- STULE POUR LA PAGE LIGHT BOX --------------------*/
+
+/***************************** STYLE POUR LE CONTENEUR DES LIGHTBOX ************************************/
+
+#loader{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5000;
+    }
+    
+    #loader2{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 5100;
+    }
+
+
+      #loader3{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000005;
+  }
+
+/************************************************************************/
+span.exple-nbr {
+    font-size: 12px;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.conteneur-lightbox {
+    position: f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    left:0px;
+    top:0px;
+}
+.lightbox {
+    width: 500px;
+    height: auto;
+    max-width: 95%;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+    padding-bottom: 0;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+}
+
+
+ .lightbox [placeholder] {
+    opacity: 1 !important;
+    color: black !important;
+}
+
+.entete-lightbox, .titre-lightbox {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    /*! margin: 0 0 20px; */
+    font-weight: 700;
+    background-color: #e37b03;
+}
+
+
+
+.close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50% 50%;
+    /*! background-color: #fff; */
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.close-lightbox path {
+    fill: rgba(0,0,0,0.5);
+    stroke: #fff
+}
+.contenu-lightbox {
+    position: relative;
+    text-align: left;
+    font-size: 16px !important;
+    line-height: 1.5;
+    color: #242323;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    /* ! padding-bottom: 25px; */
+    z-index: 5;
+    padding-bottom: 15px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.message-erreur {
+    display: none;
+    position: relative;
+    font-size: 12px;
+    background: none;
+    margin: 5px 0 0px;
+    padding: 0 0 0 15px;
+    text-align: left;
+    color: #be1e2d;
+    width: 100%;
+}
+
+.message-erreur::before {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #be1e2d;
+}
+.label-mandatory {
+    color: red;
+}
+.form-lightbox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+p.accroche-lightbox {
+    padding: 25px 1px;
+    text-align: center;
+    font-size: 14px;
+    max-width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.accroche-champs-obligatoire {
+    width: 100%;
+    text-align: right;
+    font-size: 11px;
+    padding: 0 15px;
+}
+.form-lightbox .line-form {
+    font-size: 13px;
+    width:50%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+}
+
+.form-lightbox input, .form-lightbox select, .form-lightbox button, .form-lightbox textarea {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #c1c1c1;
+    font-size:14px;
+    color:gray;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    font-weight: 200;
+    border-radius: 25px;
+}
+
+.line-form .wrap-field {
+    /* flex-direction: column-reverse; */
+    /* display: flex; */
+    position: relative;
+}
+
+
+.line-form.full {
+    width: 100%;
+}
+
+.form-lightbox textarea {
+    min-height: 60px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.line-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-btn .btn-form {
+    width: auto;
+}
+
+button.btn-form {
+    text-align: center;
+    color: #fff !important;
+    background: #e37e07;
+    height: 45px !important;
+    border: none !important;
+    text-transform: uppercase;
+    padding: 0 55px;
+    cursor: pointer;
+}
+
+button.btn-form.desable-btn {
+    background-color: gray;
+}
+
+.line-form .wrap-field input + label, .line-form .wrap-field select + label, .line-form .wrap-field textarea + label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all linear 0.5s;
+}
+
+.line-form .wrap-field input:focus ~ label,
+.line-form .wrap-field textarea:focus ~ label,
+.line-form .wrap-field textarea:valid ~ label, .line-form .wrap-field select + label
+{
+    top: 0px;
+    left: 15px;
+    font-size: 12px;
+    background-color:#fff;
+    transition: all linear 0.5s;
+}
+.field-form input:valid ~ label.condition {
+    top: 10px;
+    left: 25px;
+    z-index: 5;
+    /* position: relative; */
+    cursor: pointer;
+}
+div#lightbox-demande-carte {
+    display: flex;
+}
+
+.wrap-carte-lightbox {
+    width: 150px;
+    transform: rotate(-37deg);
+}
+
+.wrap-carte-lightbox img {
+    max-width: 100%;
+    display: block;
+    /* height: 100%; */
+    /* width: auto; */
+    transform: translateY(-53px);
+    box-shadow: 5px 7px 20px 0px rgba(111, 103, 93, 0.27);
+}
+
+div#lightbox-demande-carte .contenu-lightbox {
+    /* width: 61%; */
+}
+
+div#lightbox-demande-carte .accroche-lightbox {
+    padding: 15px 30px;
+    text-align: left;
+}
+
+div#lightbox-demande-carte .form-lightbox {
+    padding: 0px 50px;
+}
+div#lightbox-demande-carte .form-lightbox .line-form {
+}
+
+.wrap-accroche {
+    display: flex;
+    padding: 50px 80px 0px;
+    flex-direction: row-reverse;
+}
+
+.contenu-lightbox.contenu-lightbox-flex {
+    flex-direction: row;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.wrap-carte {
+    width: 60%;
+    position: relative;
+}
+
+.wrap-carte svg {
+    height: 500px;
+    width: 100%;
+}
+
+.wrap-bloc-infos {
+    height: 100%;
+}
+
+.wrap-titre-bloc-info-carte {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+h3.titre-bloc-info-carte {
+    font-weight: 600;
+}
+
+.nb-dab-bloc-info-carte {
+    color: #e37e07;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.line-bloc-info-carte {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+.libele-bloc-info-carte {
+    min-width: 90px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.value-bloc-infos-carte {
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.wrapper-infos {
+    max-width: 40%;
+    min-width: 245px;
+    padding: 25px;
+    border-left: 1px solid #f8f8f8;
+}
+
+.value-bloc-infos-carte ul {
+    font-weight: 300;
+    padding-left: 15px;
+    list-style: circle;
+}
+
+.value-bloc-infos-carte ul li {
+    margin-bottom: 5px;
+}
+.wrap-carte svg path:hover {
+    cursor: pointer;
+    fill: #e37e07;
+}
+.wrap-legende-carte {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    font-size: 12px;
+    padding: 21px 15px 0px;
+    border: 1px solid #eaeaea;
+}
+h3.titre-legende {
+    position: absolute;
+    bottom: 105%;
+}
+.line-legende {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-legend {
+    width: 15px;
+    height: 15px;
+    background-color: #e37e07;
+    margin-right: 15px;
+
+
+
+}
+
+div#lightbox-valider-code {
+    width: 450px;
+}
+
+div#conteneur-code-lightbox {
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+p.accroche-indicateur {
+    text-align: center;
+    font-size: 14px;
+    margin: -5px 0 15px 0;
+}
+
+.wrap-decompte {
+    font-size: 12px;
+    margin: -2px 0 15px 0px;
+    font-weight: 600;
+    width: 100%;
+    text-align: right;
+}
+
+.wrap-decompte a {
+    color: #e37e07;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: u;
+}
+
+span.indicateur-telephone {
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    color: gray;
+}
+
+.numero-telephone{
+    padding-left:60px;
+}

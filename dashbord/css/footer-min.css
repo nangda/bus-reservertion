@@ -1,0 +1,11 @@
+.footer {
+    flex-wrap: wrap;
+}
+
+
+.bloc-footer-wrapper {
+    width: auto !important;
+    padding: 0 30px 30px 19px;
+    box-sizing: border-box;
+	min-width: 350px;
+}

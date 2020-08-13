@@ -1,0 +1,172 @@
+.img-pourquoi {
+    position: relative;
+    margin: 0 auto;
+    left: unset;
+    transform: unset;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+div#conteneur-wrap-bloc-pourquoi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 28px;
+    flex-wrap: wrap;
+}
+
+.bloc-pourquoi {
+    padding-right: 0;
+}
+
+.bloc-pourquoi:nth-child(2n) {
+    padding-left: 5%;
+}
+
+
+
+.bloc-pourquoi {
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 15px;
+    flex-direction: row;
+}
+
+.img-bloc-pourquoi img {
+    width: 40px;
+    margin-right: 25px;
+}
+
+.content-etape-ccm {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.content-etape-wrapper:nth-child(3n+3):after{
+    transform:rotate(90deg);
+    top: 100%;
+    right: -110px;
+}
+
+.content-etape-wrapper {
+    width: 33.3%;
+}
+
+div#contact-temoignage {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div#wrap-bloc-contact {
+    margin-right: 0;
+    width: 100%;
+    padding: 0;
+    height: auto;
+}
+
+div#bloc-contact {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    /* height: 100%; */
+    background-color: #1f1f1f;
+    padding: 25px 30px;
+    width: 100%;
+    /* text-align: left !important; */
+    box-sizing:border-box;
+    margin-top:35px;
+    height: auto;
+}
+
+div#wrap-bloc-temoigange {
+    width: 100%;
+}
+
+div#conteneur-contact-temoigange {
+    margin: 0px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .conteneur-text-banniere {
+    top: 5%;
+    padding: 165px 0 20px;
+    left: 10%;
+    min-height: 235px;
+}
+
+h2.titre-1-banniere {
+    font-size: 20px;
+}
+
+h2.titre-2-banniere {
+    font-size: 30px;
+    margin: 5px 0 0px;
+}
+
+p.accroche-banniere {
+    font-size: 15px;
+    padding: 9px 60px 20px 0;
+}
+
+a.btn-1-banniere {
+    padding: 4px 30px;
+    border-radius: 35px;
+    font-size: 12px;
+}
+
+h1#titre-pourquoi {
+    font-size: 28px;
+}
+
+p.accroche-titre {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.bloc-pourquoi {
+    width: 100%;
+}
+
+.wrap-bloc-pourquoi {
+    justify-content: center;
+}
+
+h1#titre-ccm {
+    font-size: 27px;
+}
+
+.content-etape {
+}
+
+.content-etape-wrapper {
+    width: 90%;
+    margin-top: 50px;
+}
+
+.content-etape-ccm {
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+    max-width: 80%;
+}
+
+.content-etape-wrapper:after {
+    transform: rotate(90deg);
+    top: 100% !important;
+    right: -110px !important;
+}
+h1#titre-actualite {
+    font-size: 28px;
+}
+
+label {
+    font-size: 11px !important;
+}
+
+	
+}
+	
